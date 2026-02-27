@@ -1,0 +1,54 @@
+\documentclass[titlepage,fontsize=10.5 pt]{jlreq}
+% beamerならばaspectratio=169をoptionに追加し、jlreq -> beamer
+
+\usepackage{amssymb,amsmath,amsthm,amscd}
+\usepackage{ascmac}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{derivative}
+\usepackage{enumitem}%beamer metropolisを使う場合コメントアウト
+\usepackage{fancybox}
+\usepackage{frame,framed}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{physics2}
+\usepackage{siunitx}
+\usepackage{tabularray}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{titlepic} %beamer metropolisを使う場合コメントアウト
+\usepackage{wrapfig}
+
+\usephysicsmodule{ab,braket,doubleprod,xmat}
+\DefTblrTemplate{contfoot-text}{normal}{（次ページに続く）}
+\SetTblrTemplate{contfoot-text}{normal}
+\DefTblrTemplate{conthead-text}{normal}{（続き）}
+\SetTblrTemplate{conthead-text}{normal}
+
+%---for beamer metropolis---%
+%---If you use beamer metropolis,remove % below sentense---%
+% \usepackage[haranoaji,deluxe]{luatexja-preset}% フォント指定
+% \usepackage{luatexja}
+% \renewcommand{\kanjifamilydefault}{\gtdefault}% 既定をゴシック体に
+% \usetheme[block=fill]{metropolis}
+%---for beamer metropolis end---%
+
+\begin{document}
+
+\title{電磁気学とそれにかかる実務的計算}
+\author{平山大知/HiBand Beige}
+\date{\today}
+\maketitle
+\tableofcontents
+\clearpage
+\section{はじめに}
+以下の文書は、筆者自身が電磁気学の演習をしながらまとめることを意図して電磁気学についてをまとめたものである。構成としてはマクスウェル-ヘヴィサイドの式(いわゆるマクスウェル方程式)とローレンツの式をまず導入し、以降において種々の電磁気に係る現象を説明することをこころみる。また回路理論についても電磁気学との対応を説明しながら記述し、等価回路によるモデル化などについても説明する。
+
+\section{数学知識}
+第一に背景の数学知識を導入する。
+\subsection{ベクトル解析}
+ベクトル解析は19世紀頃に導入され、電磁気学に多大な影響を与えるに至った。
+\section{マクスウェル-ヘヴィサイドの式とローレンツの式}
+\subsection{マクスウェル-ヘヴィサイドの式}
+
+\end{document}
