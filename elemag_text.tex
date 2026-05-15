@@ -9,6 +9,7 @@
 \usepackage{enumitem}%beamer metropolisを使う場合コメントアウト
 \usepackage{fancybox}
 \usepackage{frame,framed}
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{mathtools}
 \usepackage{physics2}
@@ -16,8 +17,18 @@
 \usepackage{tabularray}
 \usepackage{tcolorbox}
 \usepackage{tikz}
+\usepackage{url}
 \usepackage{titlepic} %beamer metropolisを使う場合コメントアウト
 \usepackage{wrapfig}
+
+\usepackage[hang,small,bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
 
 \usephysicsmodule{ab,braket,doubleprod,xmat}
 \DefTblrTemplate{contfoot-text}{normal}{（次ページに続く）}
@@ -35,20 +46,22 @@
 
 \begin{document}
 
-\title{電磁気学とそれにかかる実務的計算}
+\title{電磁気学}
 \author{平山大知/HiBand Beige}
 \date{\today}
 \maketitle
 \tableofcontents
 \clearpage
 \section{はじめに}
-以下の文書は、筆者自身が電磁気学の演習をしながらまとめることを意図して電磁気学についてをまとめたものである。構成としてはマクスウェル-ヘヴィサイドの式(いわゆるマクスウェル方程式)とローレンツの式をまず導入し、以降において種々の電磁気に係る現象を説明することをこころみる。また回路理論についても電磁気学との対応を説明しながら記述し、等価回路によるモデル化などについても説明する。
-
-\section{数学知識}
-第一に背景の数学知識を導入する。
-\subsection{ベクトル解析}
-ベクトル解析は19世紀頃に導入され、電磁気学に多大な影響を与えるに至った。
-\section{マクスウェル-ヘヴィサイドの式とローレンツの式}
-\subsection{マクスウェル-ヘヴィサイドの式}
-
+以下の文書は、筆者自身が電磁気学の演習をしながらまとめることを意図して電磁気学についてをまとめたものである。構成としてはマクスウェル方程式とローレンツの式をまず導入し、以降において種々の電磁気に係る現象を説明することをこころみる。また回路理論についても電磁気学との対応を説明しながら記述し、等価回路によるモデル化などについても説明する。
+\section{ベクトル解析とマクスウェル方程式}
+\subsection{ナブラ}
+第一にナブラ$\nabla$と呼ばれるものを導入する。特に3次元のものについて以下のようになる
+\begin{align}
+    \nabla &= \begin{pmatrix}
+        \dfrac{\partial}{\partial x} , \dfrac{\partial}{\partial y} , \dfrac{\partial }{\partial z} \\
+    \end{pmatrix}\label{eq.nabla}
+\end{align}
+これはみての通りベクトル量であり、ベクトルとして扱う。そしてこれは空間についての微分を行うものになる。現に1次元のみのナブラは$\dfrac{\partial}{\partial x}$であり、まさしく位置についての微分をするものである。
+\subsection{ベクトル場とスカラー場}
 \end{document}
